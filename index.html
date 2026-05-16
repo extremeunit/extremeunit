@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Extreme Unit | Official Clan</title>
-<meta name="description" content="Extreme Unit - Top Delta Force Mobile Clan">
+<meta name="description" content="Extreme Unit - XEU">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,48 +26,40 @@ color:white;
 overflow-x:hidden;
 }
 
-header{
-position:fixed;
-top:0;
-left:0;
+.header{
+position:flex;
+top:20;
+left:10;
 width:100%;
-padding:18px 30px;
+padding:30px 50px;
 display:flex;
 justify-content:space-between;
 align-items:center;
 background:rgba(0,0,0,.8);
-backdrop-filter:blur(10px);
+backdrop-filter:black(10px);
 z-index:1000;
 }
 
 .logo{
-font-size:20px;
-font-weight:500;
-color:#ff0000;
-letter-spacing:2px;
-}
+    width: 400px;
+    height: 35px;
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-size:10px;
-transition:.3s;
-}
-
-nav a:hover{
-color:#ff0000;
+    background-image: url('https://example.com/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ff0000;
 }
 
 .hero{
-height:50vh;
+height:30vh;
 display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
 padding:20px;
 background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.8)),
-url('https://www.videogamer.com/wp-content/uploads/Unlock-Vyron-Delta-Force-Hawk-Ops.jpg') center/cover;
+url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSgw4YwndgFePo7UpDiAOqqBArwCvNFR2VgmNwL-oppnVJVUsTC_PaDaKIXmvIPcqkhOFSEvj6p19DDSRQNtVk0uCIhqayLobrcAqqAy_CCR5lFw17rkNZxG-qIO2uQh0QUdpIwmI8SHXBfr0ByyUtsc8t527JyxmgDs7SYYGUPXtbEQqOfYDwUp6oQAY/s1920/198042.png') center/cover;
 }
 
 .hero h1{
@@ -126,6 +118,22 @@ border:1px solid #222;
 border-radius:10px;
 transition:.3s;
 }
+.card-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.card{
+    padding: 20px;
+    border-radius: 10px;
+    background: #222;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
 
 .card:hover{
 transform:translateY(-8px);
@@ -164,72 +172,43 @@ display:none;
 <body>
 
 <header>
-<div class="logo">EXTREME UNIT</div>
+<div class="logo"></div>
+</header>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">Tournament</a>
-<a href="#">Division</a>
-<a href="#">News</a>
-<a href="#">Contact</a>
-</nav>
+
 </header>
 
 <section class="hero">
 <div>
 <h1>Welcome To <span>Extreme Unit</span></h1>
-<p>Top Delta Force Mobile Clan</p>
-<a href="#" class="btn">Join With Us</a>
 </div>
 </section>
 
 <section>
-<h2 class="title">Our Divisions</h2>
+<h2 class="title"></h2>
 
 <div class="cards">
 
-<div class="card">
-<h3>Competitive Warfare</h3>
-<p>Main roster for scrim and tournament battle.</p>
-</div>
+<a href="https://extremeunit.github.io/list-competitive-player/" class="card-link">
+  <div class="card">
+    <h3>List Competitive Player</h3>
+    <p>Tim Utama Untuk Scrim & Turnamen</p>
+  </div>
+</a>
 
-<div class="card">
-<h3>Casual Warfare</h3>
-<p>Relaxed squad for public match and fun play.</p>
-</div>
+<a href="https://wa.me/+62898-0804-296" class="card-link">
+  <div class="card">
+    <h3>Klik Nomer Whatsapp Rekurtmen</h3>
+    <p>Kirim Detail Match, SPM, KPM, ROLE Ke Nomer Rekurtmen kita!</p>
+  </div>
+</a>
 
-<div class="card">
-<h3>Operations Team</h3>
-<p>Special tactical members for mission mode.</p>
-</div>
-
-<div class="card">
-<h3>Community Squad</h3>
-<p>Open division for all loyal members.</p>
-</div>
-
-</div>
-</section>
-
-<section>
-<h2 class="title">Latest News</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Top 12 Clan Indonesia</h3>
-<p>Extreme Unit ranked in top national leaderboard.</p>
-</div>
-
-<div class="card">
-<h3>Recruitment Open</h3>
-<p>Now accepting active player for all divisions.</p>
-</div>
-
-<div class="card">
-<h3>Upcoming Tournament</h3>
-<p>Prepare for next monthly championship battle.</p>
-</div>
+<a href="https://www.tiktok.com/@extremeunitclan" class="card-link">
+  <div class="card">
+    </h3>Offical Tiktok Extreme Unit</h3>
+    <p>Follow Untuk Postingan Terbaru</p>
+  </div>
+</a>
 
 </div>
 </section>
